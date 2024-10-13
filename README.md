@@ -1,2 +1,2 @@
 # Navbar responsivo com gif de background
-[Veja!](https://as-gaspar.github.io/menu_navbar_animado/)
+[Veja e teste em diferentes tamanhos de tela!](https://as-gaspar.github.io/menu_navbar_animado/)
