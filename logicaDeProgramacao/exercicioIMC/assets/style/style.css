@@ -76,4 +76,13 @@ main > section.formulario > form > input#button:hover {
     transition: 0.2s;
 }
 
+.paragrafo-resultado, .bad {
+    background-color: rgb(120, 235, 120);
+    padding: 10px 20px;
+}
+
+.bad {
+    background-color: red;
+}
+
 
