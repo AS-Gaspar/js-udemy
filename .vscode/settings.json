@@ -2,7 +2,6 @@
   "liveServer.settings.port": 5501,
   "eslint.codeActionsOnSave.rules": null,
   "eslint.runtime": "",
-  "eslint.workingDirectories": [
-    
-  ]
+  "eslint.workingDirectories": [],
+  "git.ignoreLimitWarning": true
 }

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: darkgray;
+    box-shadow: 0px 0px 4px 0px black;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px 3px black;
+}
+
+body {
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main */
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Info */
+
+main > section.medidas {
+    flex: 1 1 50%;
+}
+
+main > section > h2 {
+    margin-bottom: 10px;
+}
+
+/* Input */
+
+main > section.formulario {
+    margin-top: 15px;
+    flex: 1 1 100%;
+}
+
+main > section > form > h1.item {
+    background-color: darkgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main > section.formulario > form > input.item {
+    margin: 8px;
+    width: 80vw;
+    height: 2em;
+}
+
+main > section.formulario > form > input#button {
+    background-color: black;
+    text-shadow: 1px 1px 3px white;
+    color: white;
+    
+}
+
+main > section.formulario > form > input#button:hover {
+    box-shadow: 1px 1px 4px black;
+    transition: 0.2s;
+}
+
+.paragrafo-resultado, .bad {
+    background-color: rgb(120, 235, 120);
+    padding: 10px 20px;
+}
+
+.bad {
+    background-color: red;
+}
+
+
