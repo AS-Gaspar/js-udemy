@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+}
+
+header {
+    background-color: brown;
+}
+
+header > h1, p {
+    padding: 15px;
+}
+
+#section {
+    background-color: white;
+    margin: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    flex: auto;
+}
+
+h1#main {
+    padding: 10px;
+}
