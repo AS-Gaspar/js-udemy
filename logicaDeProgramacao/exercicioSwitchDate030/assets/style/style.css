@@ -1,30 +1,21 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
 }
 
 body {
-    background-color: wheat;
+    background-color: rgb(26, 133, 190);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header {
-    background-color: brown;
-}
-
-header > h1, p {
-    padding: 15px;
-}
-
-#section {
+body > #section {
     background-color: white;
-    margin: 10px 20px;
+    padding: 20px;
     border-radius: 5px;
     display: flex;
-    flex-flow: row wrap;
-    flex: auto;
-}
-
-h1#main {
-    padding: 10px;
+    flex-flow: column nowrap;
 }
