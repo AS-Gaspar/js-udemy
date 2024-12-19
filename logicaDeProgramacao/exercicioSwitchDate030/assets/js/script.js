@@ -1,10 +1,11 @@
+// Variáveis para converter o número das datas em texto
 const data = new Date();
 const diaSemana = data.getDay();
-
-
 const mesNum = data.getMonth();
 let mes = "";
+let today = "";
 
+// Meses do ano
 switch (mesNum) {
     case 0:
         mes = "Janeiro";
@@ -47,8 +48,7 @@ switch (mesNum) {
         
 }
 
-let today = "";
-
+// Dias da semana
 switch (diaSemana) {
     case 0:
         today = "Domingo";
@@ -76,5 +76,14 @@ switch (diaSemana) {
         
 }
 
+// Estrutura condicional para exibir imagem de acordo com o horário
+if (data.getHours() >= 6 && data.getHours() <= 12) {
+    imagem.innerHTML = `<img src="./assets/imgs/manha.png" alt="manhã">`;
+} else if (data.getHours() > 12 && data.getHours() <= 18) {
+    imagem.innerHTML = `<img src="./assets/imgs/tarde.png" alt="tarde">`;
+} else {
+    imagem.innerHTML = `<img src="./assets/imgs/noite.png" alt="noite">`;
+}
 
-main.innerHTML = `${today}, ${data.getDate()} de ${mes} de ${data.getFullYear()} </br> ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`;
+// Exibição da data e hora
+DateHour.innerHTML = `${today}, ${data.getDate()} de ${mes} de ${data.getFullYear()} </br> Horário de Brasília: ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`;
