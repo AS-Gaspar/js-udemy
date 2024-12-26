@@ -19,3 +19,18 @@ for (let i in quarto) {
     console.log(quarto[i].nome);
     console.log(quarto[i].preco);
 }
+
+// exemplo de for in com objeto ( for of não funciona com objetos)
+
+const pessoa = {
+    nome: 'João',
+    sobrenome: 'Silva',
+    idade: 30
+}
+
+for (let chave in pessoa) {
+    console.log(chave, pessoa[chave]);
+}
+
+// for in retorna com o index do valor, e for of retorna o valor em si
+
