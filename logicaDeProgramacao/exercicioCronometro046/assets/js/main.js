@@ -1,3 +1,6 @@
+const relógio = () => {
+
+// formatação de tempo 
 const getTimeFromSeconds = (miliseconds) => {
     const data = new Date(miliseconds * 1000)
     return data.toLocaleTimeString('pt-BR', {
@@ -6,12 +9,14 @@ const getTimeFromSeconds = (miliseconds) => {
     })
 }
 
-// console.log(getTimeFromSeconds(10))
-
 const relogio = document.querySelector('.relogio');
-const iniciar = document.querySelector('.iniciar');
-const pausar = document.querySelector('.pausar');
-const zerar = document.querySelector('.zerar');
+/*
+ Não é mais necessário selecionar os botões pois estamos utilizando o event listener
+
+ const iniciar = document.querySelector('.iniciar');
+ const pausar = document.querySelector('.pausar');
+ const zerar = document.querySelector('.zerar');
+*/
 let seconds = 0;
 let timer;
 
@@ -21,7 +26,6 @@ const startTimer = () => {
         relogio.innerHTML = getTimeFromSeconds(seconds)
     }, 1000)
 }
-
 
 document.addEventListener('click', function(e) {
     const element = e.target
@@ -43,3 +47,7 @@ document.addEventListener('click', function(e) {
         startTimer()
     }
 })
+
+}
+
+relógio()
