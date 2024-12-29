@@ -13,17 +13,49 @@
 }
 
 body {
- 
   background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-  max-width: 640px;
-  margin: 50px auto;
   background: #fff;
-  padding: 20px;
+  box-shadow: 2px 2px 2px black;
   border-radius: 10px;
+  margin: 10%;
+  padding: 3%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-tarefa {
+  padding: 0.5em;
+}
+
+.btn-tarefa {
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px darkgray; 
+}
+
+.container > ul {
+  list-style: inside;
+  width: 100%;
+}
+
+.apagar {
+  background-color: red;
+  border-color: red; 
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 2px;
 }
