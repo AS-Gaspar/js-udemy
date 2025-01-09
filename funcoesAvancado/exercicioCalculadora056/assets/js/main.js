@@ -4,8 +4,18 @@ const criaCalculadora = () => {
 
         inicia() {
            this.cliqueBotoes() 
+           this.pressionaBackSpace()
            this.pressionaEnter()
         },
+
+        pressionaBackSpace() {
+            this.display.addEventListener('keydown', e => {
+              if (e.keyCode === 8) {
+                e.preventDefault();
+                this.clearDisplay();
+              }
+            });
+          },
 
         pressionaEnter() {
             this.display.addEventListener('keyup', e => {
