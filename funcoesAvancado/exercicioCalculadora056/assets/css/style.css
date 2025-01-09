@@ -13,6 +13,9 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
@@ -24,5 +27,51 @@ body {
   margin: 50px auto;
   background: #fff;
   padding: 20px;
+  margin: 20px;
   border-radius: 10px;
+}
+
+.container h1, input {
+  margin-bottom: 10px;
+}
+
+.calculadora  {
+  width: 400px;
+
+}
+
+.display {
+  font-size: 2em;
+  width: 100%;
+  text-align: right;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  font-size: 1em;
+  border: none;
+  background: #dfdfdf;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #d0d0d0;
+}
+
+.btn-equal {
+  background-color: blue;
+}
+
+.btn-equal:hover  {
+  background: rgb(1, 1, 165);
+}
+
+.btn-clear {
+  background: red;
+  color: white;
+}
+
+.btn-clear:hover {
+  background: rgb(184, 2, 2);
 }
