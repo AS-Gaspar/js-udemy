@@ -13,7 +13,7 @@ function* geradora() {
 //     console.log(valor)
 // }
 
-// Gereador infinito
+// Gerador infinito
 function* geradorInfinito() {
     let i = 0
 
@@ -56,3 +56,25 @@ for (let valor of tarefas) {
     console.log(valor)
 }
 
+function* geradorOrdenado() {
+    yield function() {
+        console.log('Vim do y1')
+    }
+
+    yield function() {
+        console.log('Vim do y2')
+    }
+
+    yield function() {
+        console.log('Vim do y3')
+    }
+}
+
+const geradorOutput = geradorOrdenado() 
+const func1 = geradorOutput.next().value
+const func2 = geradorOutput.next().value
+const func3 = geradorOutput.next().value
+
+func1()
+func2()
+func3()
