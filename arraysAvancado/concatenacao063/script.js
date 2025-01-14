@@ -7,4 +7,4 @@ console.log(array3)
 
 // ... rest --> Spread
 const arrayRest = [...array1, 'Zé', ...array2, ...[7, 8, 9], 10];
-console.log(arrayRest);
+
