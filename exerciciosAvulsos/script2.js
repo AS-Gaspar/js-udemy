@@ -1,16 +1,15 @@
 const nums = [2,2,1,1,1,2,2]
 
-var majorityElement = function(nums) {
-    const mapElements = new Map()
-    for (let num = 0; num < nums.length; num++) {
-        let n = nums[num]
-        if (mapElements.has(nums[num])) {
-            mapElements.get(n++)
+const elementoMaisRepetido = (nums) => {
+    const map = new Map()
+    for (let i = 0; i < nums.length; i++) {
+        if (map.has(nums[i])) {
+            map.set(nums[i], map.get(nums[i]) + 1)
         } else {
-            mapElements.set(n, 1)
+            map.set(nums[i], 1)
         }
-        if (mapElements.get(n) > nums.length / 2) return mapElements.get(n)
+        if (map.get(nums[i]) > nums.length / 2) return nums[i]
     }
-};
+}
 
-console.log(majorityElement(nums))
+console.log(elementoMaisRepetido(nums))
