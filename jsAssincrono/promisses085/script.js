@@ -6,7 +6,7 @@ function rand(min, max) {
 
 function esperaAi(msg, tempo) {
     return new Promise((resolve, reject) => {
-        if (typeof msg !== 'string') reject(new Error('Error')) 
+        if (typeof msg !== 'string') reject('Error')
          setTimeout(() => {
             resolve(msg)
          }, tempo)
