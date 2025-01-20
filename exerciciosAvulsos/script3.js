@@ -1,4 +1,4 @@
-const numRows = 10
+const numRows = 5
 
 const generate = function (numRows) {
     const rows = []
